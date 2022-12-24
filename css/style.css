@@ -1,0 +1,258 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Navigation */
+.navigation {
+  height: 7rem;
+  background-color: #7030cc;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 15rem;
+}
+.nav_left img {
+  height: 3.5rem;
+}
+.nav_link {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #fff;
+  margin-right: 3rem;
+}
+.active_link {
+  color: #1bbcef;
+  border-bottom: 1px solid #b41313;
+}
+.nav_btn {
+  padding: 1rem 1.6rem;
+  color: #e7e6e6;
+  background-color: #1bbcef;
+  border: none;
+  margin-left: 2rem;
+}
+
+/* Home */
+.home_container {
+  background-color: #7030cc;
+  padding: 5rem 2rem 5rem 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+.home_left {
+  width: 34rem;
+}
+.home_heading {
+  font-size: 4.2rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 3rem 0;
+}
+.home_para {
+  font-size: 1.45rem;
+  color: #fff;
+  font-weight: 100;
+}
+.home_right img {
+  height: 35vw;
+}
+
+/* Service */
+.service_container {
+  padding: 0 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.service_left img {
+  height: 45vw;
+}
+.service_right {
+  width: 40rem;
+  margin-top: 10rem;
+}
+.service_heading {
+  font-size: 3rem;
+}
+.service_card {
+  display: flex;
+  margin: 3rem 0;
+}
+.service_card_heading {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+.service_card_left i {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.service_card_para {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  width: 80%;
+  margin-top: 1.5rem;
+  line-height: 2rem;
+}
+
+/* Feature */
+.feature_heading {
+  font-size: 2.8rem;
+  text-align: center;
+  width: 32rem;
+  margin: 5rem auto;
+}
+.feature_card_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15rem;
+  margin-bottom: 3rem;
+}
+.feature_card {
+  background-color: #ffffff;
+  width: 15rem;
+  border-radius: 15px;
+  box-shadow: 10px -3px 5px -6px #a0a0a08f;
+}
+.feature_card_icon {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem auto;
+}
+.feature_card_icon img {
+  height: 2.5rem;
+}
+.feature_card_heading {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.feature_card_para {
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(155, 155, 155);
+  width: 80%;
+  line-height: 1.6rem;
+  margin: 0.5rem auto;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 50%;
+  }
+  .service_right {
+    width: 36rem;
+    margin-top: 7rem;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+  .nav_right{
+    display: none;
+  }
+  .home_left{
+    width: 40rem;
+  }
+  .home_para{
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+  .service_left img{
+    height: 52vw;
+  }
+  .service_right{
+    width: 32rem;
+  }
+  .service_card_para {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000000cc;
+  }
+}
+@media (max-width: 620px) {
+  /* Home Container */
+  .home_container{
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+  }
+  .home_para{
+    margin-bottom: 3rem;
+  }
+  .home_left{
+    width: 60rem;
+  }
+  .home_right img{
+    height: 40rem;
+  }
+
+  /* Service Container */
+  .service_container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .service_left img{
+    height: 50rem;
+  }
+  .service_right{
+    width: 43rem;
+    margin: 0 auto;
+  }
+
+  /* Feature Container */
+  .feature_card_container{
+    padding: 0 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .feature_card{
+    width: 19rem;
+    margin: 1.5rem;
+  }
+  .feature_card_heading{
+    font-size: 1.8rem;
+  }
+  .feature_card_para{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 550px) {
+  html{
+    font-size: 35%;
+  }
+  .service_card_left i{
+    font-size: 2rem;
+    margin: 1.5rem;
+  }
+  .service_right{
+    width: 42rem;
+  }
+  .service_heading{
+    font-size: 4rem;
+  }
+  .service_card_heading{
+    font-size: 2.5rem;
+  }
+  .service_card_para{
+    font-size: 1.8rem;
+    letter-spacing: .9px;
+  }
+  .service_card_container{
+    width: 54rem;
+  }
+}
